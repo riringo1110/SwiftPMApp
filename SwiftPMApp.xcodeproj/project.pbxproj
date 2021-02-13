@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		E0966FDA25D8239A002E8D3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0966FD825D8239A002E8D3C /* LaunchScreen.storyboard */; };
 		E0966FE525D8239A002E8D3C /* SwiftPMAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0966FE425D8239A002E8D3C /* SwiftPMAppTests.swift */; };
 		E0966FF025D8239A002E8D3C /* SwiftPMAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0966FEF25D8239A002E8D3C /* SwiftPMAppUITests.swift */; };
+		E096700225D8267C002E8D3C /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = E096700125D8267C002E8D3C /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E096700225D8267C002E8D3C /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +146,9 @@
 			dependencies = (
 			);
 			name = SwiftPMApp;
+			packageProductDependencies = (
+				E096700125D8267C002E8D3C /* PKHUD */,
+			);
 			productName = SwiftPMApp;
 			productReference = E0966FCA25D82398002E8D3C /* SwiftPMApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = E0966FC125D82398002E8D3C;
+			packageReferences = (
+				E096700025D8267C002E8D3C /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = E0966FCB25D82398002E8D3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -437,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q9949RVNA;
 				INFOPLIST_FILE = SwiftPMApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5Q9949RVNA;
 				INFOPLIST_FILE = SwiftPMApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -587,6 +597,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E096700025D8267C002E8D3C /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E096700125D8267C002E8D3C /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E096700025D8267C002E8D3C /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E0966FC225D82398002E8D3C /* Project object */;
 }
